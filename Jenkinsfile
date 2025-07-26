@@ -7,7 +7,7 @@ pipeline {
         ECR_REPO = 'demo-app'
         DOCKER_IMAGE = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPO}"
         DOCKER_TAG = "${env.BUILD_NUMBER}"
-        EC2_INSTANCE_IP = '35.183.70.86'
+        EC2_INSTANCE_IP = '3.98.138.123'
         SSH_USER = 'ubuntu' // or ubuntu depending on AMI
     }
     
@@ -55,7 +55,7 @@ pipeline {
                             aws ecr get-login-password --region ${AWS_REGION} | docker login --username AWS --password-stdin ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com
                             docker pull ${DOCKER_IMAGE}:${DOCKER_TAG}
                             
-                            # Stop and remove old container
+                            #Stop and remove old container
                             docker stop your-app-name || true
                             docker rm your-app-name || true
                             
