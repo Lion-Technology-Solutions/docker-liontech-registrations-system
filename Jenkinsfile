@@ -60,7 +60,7 @@ pipeline {
                             docker rm your-app-name || true
                             
                             # Run new container
-                            docker run -d --name your-app-name -p 80:8080 ${DOCKER_IMAGE}:${DOCKER_TAG}
+                            docker run -d --name demoapp -p 80:8080 ${DOCKER_IMAGE}:${DOCKER_TAG}
                             # Add any other run options needed
                             EOF
                         """
