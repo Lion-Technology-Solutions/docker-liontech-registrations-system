@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LionTech DevOps Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/liontech-logo.jpg" alt="LionTech Logo" class="logo">
+            <h1>DevOps Training Program</h1>
+            <p>Register for our next cohort starting soon!</p>
+        </header>
+
+        <main>
+            <section class="registration-form">
+                <h2>Registration Form</h2>
+                <form action="/submit" method="post">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="experience">DevOps Experience Level</label>
+                        <select id="experience" name="experience">
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Register Now</button>
+                </form>
+            </section>
+
+            <section class="current-students">
+                <h2>Our Current Students</h2>
+                <div class="student-gallery">
+                    <div class="student-card">
+                        <img src="images/student1.jpg" alt="Student 1">
+                        <h3>Alex Johnson</h3>
+                        <p>"LionTech transformed my career!"</p>
+                    </div>
+                    <div class="student-card">
+                        <img src="images/student2.jpg" alt="Student 2">
+                        <h3>Maria Garcia</h3>
+                        <p>"Best DevOps training out there."</p>
+                    </div>
+                    <div class="student-card">
+                        <img src="images/student3.jpg" alt="Student 3">
+                        <h3>Samuel Wilson</h3>
+                        <p>"Landing my dream job thanks to LionTech."</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2023 LionTech DevOps Academy. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
